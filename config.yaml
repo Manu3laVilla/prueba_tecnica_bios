@@ -1,0 +1,19 @@
+# Parámetros no secretos (ajustables). Los secretos van en `.env`.
+
+chunk_size: 900
+chunk_overlap: 150
+retrieval_top_k: 5
+# Similitud mínima (0-1) respecto al embedding de la pregunta. Depende del espacio de Chroma.
+similarity_threshold: 0.32
+knowledge_base_path: "./knowledge_base"
+history_length: 12
+rate_limit_per_minute: 20
+log_level: "INFO"
+data_dir: "./data"
+# Nombre del archivo de índice vectorial en data_dir/ (pickle .pkl)
+vector_index_name: "mesa_ayuda_kb"
+# sentence-transformers: modelo multilingüe razonable para español
+embedding_model: "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2"
+system_prompt_path: "./prompts/system_prompt.md"
+manifest_path: "./data/manifest.json"
+unanswered_log_path: "./data/unanswered.log"
