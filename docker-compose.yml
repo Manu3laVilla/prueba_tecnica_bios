@@ -1,0 +1,10 @@
+services:
+  mesa-ayuda:
+    build: .
+    env_file: .env
+    volumes:
+      - ./knowledge_base:/app/knowledge_base
+      - ./data:/app/data
+      - ./config.yaml:/app/config.yaml:ro
+      - ./prompts:/app/prompts:ro
+    restart: unless-stopped
