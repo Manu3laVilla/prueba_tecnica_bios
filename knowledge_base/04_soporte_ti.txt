@@ -1,0 +1,15 @@
+SOPORTE DE TI — ACME LABS S.A.S. (FICTICIO)
+==========================================
+
+Nivel 1 (mesa de ayuda)
+- Horario: lunes a viernes 07:00–19:00, sábado 08:00–13:00 (hora Bogotá).
+- Canal: extensión 2100 o ticket categoría "Soporte general".
+
+Passwords y accesos
+- Cambio de contraseña: cada 90 días. No reutilizar las últimas 5 contraseñas.
+- Cuentas nuevas de sistema ERP: SLA de provisión 2 días hábiles tras aprobación del líder.
+
+Equipos dañados
+- Reportar en el mismo día del incidente con foto y número de serial.
+- Si el equipo tiene más de 4 años, reemplazo sujeto a disponibilidad; no hay garantía de equipo nuevo.
+
