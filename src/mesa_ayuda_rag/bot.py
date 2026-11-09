@@ -163,7 +163,7 @@ class HelpDeskBot:
             await chat.send_message("No tienes permisos para /reindex.")
             return
         await chat.send_message("Reindexando…")
-        stats = await asyncio.to_thread(self._indexer.reindex, False)
+        stats = await asyncio.to_thread(self._indexer.reindex)
         self._manifest.load()
         await chat.send_message(
             "Reindexación terminada.\n"
@@ -235,7 +235,7 @@ class HelpDeskBot:
         async def post_init(application: Application) -> None:
             _ = application
             logger.info("startup_reindex_begin")
-            await asyncio.to_thread(self._indexer.reindex, False)
+            await asyncio.to_thread(self._indexer.reindex)
             self._manifest.load()
             logger.info("startup_reindex_done")
 

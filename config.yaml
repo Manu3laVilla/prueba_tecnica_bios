@@ -4,7 +4,7 @@ chunk_size: 900
 chunk_overlap: 150
 retrieval_top_k: 5
 # Similitud mínima (0-1) respecto al embedding de la pregunta. Depende del espacio de Chroma.
-similarity_threshold: 0.32
+similarity_threshold: 0.28
 knowledge_base_path: "./knowledge_base"
 history_length: 12
 rate_limit_per_minute: 20

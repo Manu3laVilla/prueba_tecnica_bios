@@ -9,7 +9,7 @@ Documento del punto **6.4** del enunciado. Trabajo habitual: leo el reto, defino
 | Herramienta | Versión / modelo | Uso |
 |-------------|------------------|-----|
 | **Cursor IDE** | Escritorio, nov. 2025 | Proyecto, terminal, revisión de diffs |
-| **Cursor Agent** | **Composer** (plan Pro, sesión de la entrega) | Generación y refactors en `specs/`, `src/`, `docs/` |
+| **Cursor Agent** | **Composer** | Generación y refactors en `specs/`, `src/`, `docs/` |
 | **Cursor Chat** | Mismo IDE | Depuración (`pip`, `pytest`, mensajes de error) |
 | **SDD** | `specs/` (spec, plan, tasks) | Especificación antes de implementación; sin herramienta Spec Kit aparte |
 
@@ -45,7 +45,7 @@ Reconstrucción de mensajes típicos; no tengo export del historial.
 
 ### 4.1 Arranque
 
-> Prueba técnica Bios: asistente RAG en Telegram, solo con `knowledge_base/`. Carpeta `specs/` (SDD), Python, RF obligatorios primero, docs del enunciado, parametrización en `.env` y YAML, sin secretos en git. Propón stack y justifícalo.
+> Asistente RAG en Telegram, solo con `knowledge_base/`. Carpeta `specs/` (SDD), Python, RF obligatorios primero, docs del enunciado, parametrización en `.env` y YAML, sin secretos en git. Propón stack y justifícalo.
 
 **Por qué:** necesitaba entregable clonable, no un prototipo suelto.
 
@@ -77,7 +77,7 @@ Reconstrucción de mensajes típicos; no tengo export del historial.
 
 ## 5. Sugerencias que rechacé o corregí
 
-Esta sección es la que más importa: no adopté todo lo que sugiere un asistente genérico ni el primer diff que compilaba “en teoría”.
+No adopté todo lo que sugiere un asistente genérico ni el primer diff que compilaba “en teoría”.
 
 **ChromaDB en Windows.** La primera versión del proyecto traía Chroma. En mi PC la instalación exigía compilar `chroma-hnswlib` (Visual C++ Build Tools). Rechacé esa dependencia para la entrega y pedí un almacén en `vector_store.py` con **NumPy + pickle** bajo `data/vectors/`. Actualicé ADR-006, `specs/plan.md` y RF-02 en `spec.md`. Mantuve persistencia local; cambié la implementación.
 

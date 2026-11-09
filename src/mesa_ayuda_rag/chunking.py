@@ -28,9 +28,11 @@ def split_markdown_sections(text: str) -> list[tuple[str | None, str]]:
         return [(None, text.strip())]
 
     sections: list[tuple[str | None, str]] = []
-    i = 0
     if parts[0].strip():
         sections.append((None, parts[0].strip()))
+        i = 1
+    else:
+        # Con split() el primer trozo suele ser vacío; el encabezado empieza en índice 1.
         i = 1
     while i < len(parts) - 1:
         title = parts[i].strip()

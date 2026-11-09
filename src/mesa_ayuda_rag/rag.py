@@ -112,7 +112,11 @@ class RagEngine:
         user_block = (
             f"## Historial reciente (ordenado)\n{history_block}\n\n"
             f"## Pregunta actual\n{user_message}\n\n"
-            f"## Documentos recuperados\n{context}"
+            f"## Documentos recuperados\n{context}\n\n"
+            "## Instrucción de respuesta\n"
+            "Redacta la respuesta usando únicamente los fragmentos anteriores. "
+            "Si contienen cifras o reglas que resuelven la pregunta, inclúyelas de forma directa. "
+            "No indiques que falta información cuando un fragmento ya la trae."
         )
 
         try:
